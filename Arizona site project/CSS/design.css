@@ -1,0 +1,136 @@
+/* grid layout and templte #1*/
+
+.grid-container{
+    -ms-grid-columns: 20% 40% 20% 20%;
+    grid-template-columns: 20% 40% 20% 20%;
+    -ms-grid-rows: 15% 7% 70% 8% ;
+    grid-template-rows: 120px 60px 65% 8%;
+    display:-ms-grid;
+    display:grid;
+    grid-gap: 6px;
+}
+
+.fixed-box{
+    background-color: #7d2525;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:inline;
+    border: #5e5b5b solid 4px;
+    border-radius: 7%;
+    text-align: center;
+    position: fixed;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 2%;
+    
+}
+
+
+.static-box{
+    background-color: #6b1a1a;
+    color: lightgray;
+    background-color: #6b1a1a;
+    border: solid white 7px;
+    border-radius: 6%;
+    padding: 3%;
+}
+
+
+.logo{
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-row:1;
+    grid-row-start:1;
+    -ms-grid-row-span:1;
+    grid-row-end:2;
+}
+
+.header{
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span:2;
+    grid-column-end:4;
+    -ms-grid-row:1;
+    grid-row-start:1;
+    -ms-grid-row-span:1;
+    grid-row-end:2;
+    text-align: stretch;
+    clear:none;
+    left:20%;
+   
+}
+
+.back-to-top{
+    -ms-grid-column:4;
+    grid-column-start:4;
+    -ms-grid-column-span:1;
+    grid-column-end:5;
+    -ms-grid-row:1;
+    grid-row-start:1;
+    -ms-grid-row-span:1;
+    grid-row-end:2;
+    left: 80%;
+}
+
+.nav{
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+    -ms-grid-row-span:1;
+    grid-row-end:3;
+    top: 11%;
+    text-align: center;
+    padding-left:10%;
+    padding-right: 10%;
+    width:80%;
+}
+
+.article{
+    -ms-grid-column:1;
+    grid-column-start:1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+    -ms-grid-row:3;
+    grid-row-start:3;
+    -ms-grid-row-span:1;
+    grid-row-end:4;
+    clear: left;
+    
+}
+
+.aside{
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    -ms-grid-column-span:2;
+    grid-column-end:5;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span:1;
+    grid-row-end:4;
+
+}
+
+
+
+
+
+
+
+/* end of grid layout and template #1*/
+
+
+body{
+    max-width: 1070px;
+    min-width: 500px;
+    -webkit-max-width:950px;
+    -webkit-min-width: 500px;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #332d2d;
+}
